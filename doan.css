@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: white;
+}
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+}
+#top-header{
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+
+}
+#top-header a{
+  line-height: 90px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+.login{
+    display: flex;
+    text-transform: uppercase;
+    
+}
+#a{
+    color: #ffffff;
+    line-height: 90px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 400;
+}
+#logo-header{
+    margin-left: 145px;
+}
+#main-header{
+    height: 70px;
+    display: flex;
+    background-color: #777777;
+    
+}
+#menu{
+    display: flex;
+    line-height: 70px;
+    list-style: none;
+    margin-left: 20px;
+}
+#menu a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: black;
+    font-weight: 200;
+}
+#main-header input{
+    height: 30px;
+    width:200px ;
+    background-color:white;
+    outline: none;
+    border: none;
+    right: 20px;
+}
+#main-header button{
+    padding: 8px 10px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+}
+#login{
+    line-height: 70px;
+    margin-left:250px;
+}
+.card {
+    margin: auto 0;
+    margin-left: 250px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: white;
+}
+.card span{
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+
+}
+.banner{
+    margin-top: 30px;
+    width: 980px;
+    height: 400px;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+#name-sale {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#name-gender{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; 
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.product-main{
+   padding: 10px 0px;
+   width: 220px;
+   background-color: white;
+   text-align: center;
+   margin-bottom: 30px;
+}
+.product-main input{
+    border: none;
+    outline: none;
+    width: 50px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.product-main button{
+    width: 100%;
+    background-color: #6667ab;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 0;
+    color: #ccc;
+    cursor: pointer;
+    
+}
+.product-main img{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+#name-product{
+    font-size: 20px;
+    font-weight: 200;
+}
+#code-product{
+    font-size: 20px;
+    font-weight: 200;
+}
+#price-product{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+.product-main:hover{
+    box-shadow: -3px 6px 15px 5px #888888;
+}
+#delete_all{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 520px;
+}
+#delete{
+    padding: 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#delete_all:hover{
+    opacity: 0.60;
+}
+#delete:hover{
+    opacity: 0.60;
+}
+#number{
+    font-size: 20px;
+    margin-top: 5px;
+}
+table{
+    padding: 10px 10px;
+}
+table td{
+    padding: 0 10px;
+}
+.showgiohang{
+    position: absolute;
+    z-index: 10;
+    right: 410px;
+    top: 70px;  
+    color: white;
+    background-color: #6667ab;
+    
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.showgiohang img{
+    width: 100px;
+    height: 100px;
+}
+.tt img{
+    width: 100px;
+    height: 100px;
+}
+/* nam/nữ*/
+.danhmuc{
+    text-align: center;
+    margin: 30px;
+}
+h1{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+h3{
+    border: 1px solid #bebebe;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.product-gender{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+   
+}
+#dongy{
+    padding: 10px 10px;
+    border-radius:10px ;
+   margin-left: 20px;
+   background:linear-gradient(rgb(131, 59, 170),rgb(63, 6, 253));
+   border: none;
+   outline: none;
+   font-size: 18px;
+   font-weight: bold;
+   color: #f8f8f8;
+   cursor: pointer;
+   transform: 0.3s;
+   margin-bottom: 30px;
+}
+#dongy:hover{
+    opacity: 0.80;
+}
+/*footer*/
+.container{
+	max-width: 980px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0 0 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   margin-bottom: 10px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-bottom{
+    background-color: black;
+    color: #bbbb;
+    padding: 20px;
+    text-align: center;
+}
+/*form dang ki*/

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="doan.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div id="top-header">
+                <a href="">
+                    ĐĂNG NHẬP / ĐĂNG KÍ
+                </a>
+                <div id="logo-header">
+                    <img src="img-doan/Untitled-2.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="img-doan/—Pngtree—yellow shopping cart hand drawn_4500167.png" alt="" onclick="showhidecart()">
+                    <span id="soluonghang"></span>
+                </div>
+            </div>
+            <div class="showgiohang" id="showgiohang">
+                <table>
+                    <tr>
+                        <td>STT</td>
+                        <td>Hình</td>
+                        <td>Tên sản phẩm</td>
+                        <td>Đơn giá</td>
+                        <td>Số lượng</td>
+                        <td>Thành tiền</td>
+                        <td>Xoá</td>
+                    </tr>
+                    <tbody id="mycart">
+                        
+                    </tbody>
+                </table>
+                <br>
+                <a href="cart.html">Thanh toán đơn hàng</a>
+                <button id="delete_all" onclick="xoatatca()">Xoá tất cả</button>
+            </div>
+            <div id="main-header">
+                <ul id="menu">
+                    <a href=""><li>TRANG CHỦ</li></a>
+                    <a href="nam.html" target="_blank"><li>NAM</li></a>
+                    <a href="nu.html" target="_blank"><li>NỮ</li></a>
+                    <a href="cart.html"><li>THANH TOÁN</li></a>
+                </ul>
+                <div id="login">
+                    <input type="text">
+                <button type="submit">TÌM KIẾM</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="banner">
+                <img src="img-doan/BANNERDOAN.jpg" alt="">
+            </div>
+            <div class="danhmuc">
+                <h3>Sản Phẩm nữ</h3>
+            </div>
+            <div class="product-gender">
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/giày nữ.jpg" alt="">
+                    <p id="name-product">Giày air force 1</p>
+                    <p id="price-product">
+                        giá:<span>100</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/nu-sp2.jpg" alt="">
+                    <p id="name-product">Giày Cao Gót</p>
+                    <p id="price-product">
+                        giá:<span>50</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/nu-sp3.jpg" alt="">
+                    <p id="name-product">Giày Balenciaga</p>
+                    <p id="price-product">
+                        giá:<span>900</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/nu-sp4.jpg" alt="">
+                    <p id="name-product">Giày Sneaker Nữ</p>
+                    <p id="price-product">
+                        giá:<span>200</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/giày nữ.jpg" alt="">
+                    <p id="name-product">Giày air force 1</p>
+                    <p id="price-product">
+                        giá:<span>100</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/nu-sp2.jpg" alt="">
+                    <p id="name-product">Giày Cao Gót</p>
+                    <p id="price-product">
+                        giá:<span>50</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/nu-sp3.jpg" alt="">
+                    <p id="name-product">Giày Balenciaga</p>
+                    <p id="price-product">
+                        giá:<span>900</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-main" id="boxSp">
+                    <img src="img-doan/nu-sp4.jpg" alt="">
+                    <p id="name-product">Giày Sneaker Nữ</p>
+                    <p id="price-product">
+                        giá:<span>200</span> <samp>$</samp>
+                    </p>
+                    <p id="number">Số lượng</p>
+                    <input type="number"  id="" value="1" min="1" >
+                    
+                    <button id="add-cart" onclick="addToCard(this)">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">returns</a></li>
+                                <li><a href="#">order status</a></li>
+                                <li><a href="#">payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>online shop</h4>
+                            <ul>
+                                <li><a href="#">watch</a></li>
+                                <li><a href="#">bag</a></li>
+                                <li><a href="#">shoes</a></li>
+                                <li><a href="#">dress</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© Bản quyền thuộc về. Thiết kế website Mấy Thằng Em </p>
+                    </div>
+                </div>
+           </footer>
+        </footer>
+    </div>
+   
+</body>
+
+<script src="doan.js"></script>
+</html>

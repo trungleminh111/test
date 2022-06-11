@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dangki.css">
+</head>
+<body>
+    <style>
+        body{
+    background-color: #344a72;
+    font-family: Arial, Helvetica, sans-serif,sans-serif;
+
+}
+.signup-box{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size:  15px;
+
+}
+.para-2{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.para-2 a{
+    color: #49c1a2;
+}
+#dk{
+    padding: 15px 70px;
+    
+    margin-left: 8px;
+    background-color: #1a73e8;
+    color: white;
+    border-radius:10px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#dk:hover{
+    opacity: 0.80;
+}
+a{
+    text-decoration: none;
+}
+.dialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}
+.dialog:target{
+    visibility: visible;
+    opacity: 1;
+}
+.overlay{
+    background-color: rgb(0,0,0,0.6);
+}.dialog-body{
+    min-width: 400px;
+    position: relative;
+    padding: 16px;
+    background-color: #4CAF50;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.dialog-close{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    text-decoration: none;
+    color: #333;
+    
+}
+.dialog-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+/*đăng*/
+
+    </style>
+    <div class="signup-box ">
+        <h1>Sign Up</h1>
+        <form action="" class="dk">
+            <label>Tên Đăng Nhập</label>
+            <input type="text" placeholder="" value="" >
+            <label>Email</label>
+            <input type="text" placeholder="" >
+            <label>Password</label>
+            <input type="password" placeholder="" >
+            <label>Nhập Lại Password</label>
+            <input type="password" placeholder="" >
+        </form>
+            <a href="#my-dialog" id="dk">Đăng kí</a>
+        <div class="dialog overlay" id="my-dialog">
+            <a href="#" class="dialog-overlay"></a>
+            <div class="dialog-body">
+                <h3>Welcome to Mấy thằng em</h3>
+                <a href="#" class="dialog-close">&times;</a>
+                <p>Bạn đã đăng kí thành công</p>
+            </div>
+        </div>
+        <p>Bằng cách nhấp vào nút Đăng ký, bạn đồng ý tham gia <br>
+        <a href="#">Điều khoản và Điều kiện</a> và <a href="#">Chính sách và Quyền riêng tư</a>
+        </p>
+    </div>
+    <p class="para-2">Bạn có sẵn sàn để tạo một tài khoản? <a href="doan.html">Quay về trang chủ</a></p>
+</body>
+</html>
